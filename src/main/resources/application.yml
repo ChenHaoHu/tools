@@ -1,0 +1,11 @@
+
+value:
+  AccessKeyID: "LTAI5y6NsFd6eFCI"
+  AccessKeySecret: "PCB1hr1gstL1HGo8r3kzq99qOwk7fc"
+  AppKey: "WR4xyZhc4HGAlTRG"
+
+
+
+logging:
+  level:
+    TimerConfig: info
