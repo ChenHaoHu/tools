@@ -15,11 +15,7 @@ public class SpeechRecognizerDemoTest {
    @Test
    public void test(){
 
-        SmartAudioTrans demo = new SmartAudioTrans();
-        demo.appKey = "WR4xyZhc4HGAlTRG";
 
-        String audioTransData = demo.getAudioTransData("http://www.hcyang.top/demo.wav");
-        System.out.println(audioTransData);
 
     }
 }

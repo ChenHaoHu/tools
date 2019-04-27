@@ -3,9 +3,23 @@ value:
   AccessKeyID: "LTAI5y6NsFd6eFCI"
   AccessKeySecret: "PCB1hr1gstL1HGo8r3kzq99qOwk7fc"
   AppKey: "WR4xyZhc4HGAlTRG"
+  AudioFile: "/smartaudio/audio/"
+  RobotUrl: "http://openapi.tuling123.com/openapi/api/v2"
+  RobotApiKey: "7188f3b922134e4188f39a48adaff38c"
+  RobotUserId: "123456"
 
 
 
 logging:
   level:
     TimerConfig: info
+
+server:
+  tomcat:
+    basedir: /smartaudio/tmp/
+
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 10MB

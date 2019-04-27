@@ -1,4 +1,4 @@
-package com.hcy.smartrobot.service;
+package com.hcy.smartrobot.config;
 
 import com.alibaba.nls.client.AccessToken;
 import com.aliyuncs.exceptions.ClientException;
