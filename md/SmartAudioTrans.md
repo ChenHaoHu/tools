@@ -27,7 +27,7 @@
 
 转换代码：
 ```java
-     				String cmd1 = "lame "+ file + " " + name+".wav --decode";
+     		String cmd1 = "lame "+ file + " " + name+".wav --decode";
             Process exec1 = Runtime.getRuntime().exec(cmd1);
             exec1.waitFor();
             String cmd2 = "sox " + name +".wav -r 16000 -c 1 "+name+"_tras.wav";
