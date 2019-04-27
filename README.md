@@ -3,9 +3,13 @@ SmallTools for developing
 
 
 
+> 汇总一点开发中用到的小工具
 
 
-- [x] 添加语音识别(一句话识别) [文档](md/SmartAudioTrans.md)
-- [ ] 添加文字读音
-- [ ] 添加稚嫩陪聊
+
+
+
+- [x] 语音识别(一句话识别) [文档](md/SmartAudioTrans.md)
+- [ ] 文字语音
+- [ ] 图灵陪聊
 

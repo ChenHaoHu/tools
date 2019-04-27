@@ -139,8 +139,8 @@ public class SmartAudioTransImpl implements SmartAudioTrans {
             Process exec1 = Runtime.getRuntime().exec(cmd1);
             exec1.waitFor();
             String cmd2 = "sox " + name +".wav -r 16000 -c 1 "+name+"_tras.wav";
-            Process exec = Runtime.getRuntime().exec(cmd2);
-            exec.waitFor();
+            Process exec2 = Runtime.getRuntime().exec(cmd2);
+            exec2.waitFor();
         }catch(Exception e){
             e.printStackTrace();
         }
