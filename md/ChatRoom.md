@@ -1,25 +1,59 @@
-package com.hcy.smartrobot.service;
-
-import java.io.IOException;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.CopyOnWriteArraySet;
-
-import javax.websocket.OnClose;
-import javax.websocket.OnError;
-import javax.websocket.OnMessage;
-import javax.websocket.OnOpen;
-import javax.websocket.Session;
-import javax.websocket.server.PathParam;
-import javax.websocket.server.ServerEndpoint;
-
-import com.alibaba.fastjson.JSONObject;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+### 聊天室
 
 
 
+>技术要点
+
+* websocket技术
+
+
+
+说起聊天室肯定首选技术是**WebSocket**，**WebSocket**是一种在单个[TCP](https://baike.baidu.com/item/TCP)连接上进行[全双工](https://baike.baidu.com/item/全双工)通信的协议，使用它比使用长连接和短连接更加符合业务需求
+
+> 个人总结:**长短连接和轮询都是服务器端被动，只能客户端先发起请求的方式，提现了http协议的被动型；而websocket服务器端可以发送多次消息给客户端**
+
+
+
+
+
+> 效果图
+
+##### 聊天信息格式
+
+```json
+{
+"toid":124,
+"message":"你好？"
+}
+```
+
+
+
+##### 交互式聊天
+
+> 发送者
+
+![image-20190429110226303](/Users/hcy/Documents/CodeProject/SpringBoot/smartrobot/md/img/image-20190429110226303.png)
+
+> 接收者
+
+![image-20190429110557143](/Users/hcy/Documents/CodeProject/SpringBoot/smartrobot/md/img/image-201904291105571431.png)
+
+
+
+##### 和机器人聊天
+
+> Toid 为 0 时，发送给机器人
+
+![image-20190429110500966](/Users/hcy/Documents/CodeProject/SpringBoot/smartrobot/md/img/image-201904291102261303.png)
+
+
+
+我们这里是采用SpringBoot上直接构建的原生的websocket，其实真实高并发高流量的业务场景肯定是首选使用netty框架实现。
+
+
+
+```java
 @ServerEndpoint("/chat/{userId}")
 @Component
 public class WebChatServer {
@@ -139,4 +173,5 @@ public class WebChatServer {
         WebChatServer.onlineCount--;
     }
 }
+```
 
