@@ -33,11 +33,11 @@
 
 > 发送者
 
-![image-20190429110226303](/Users/hcy/Documents/CodeProject/SpringBoot/smartrobot/md/img/image-20190429110226303.png)
+![image-20190429110226303](img/image-20190429110226303.png)
 
 > 接收者
 
-![image-20190429110557143](/Users/hcy/Documents/CodeProject/SpringBoot/smartrobot/md/img/image-201904291105571431.png)
+![image-20190429110557143](img/image-201904291105571431.png)
 
 
 
@@ -45,7 +45,7 @@
 
 > Toid 为 0 时，发送给机器人
 
-![image-20190429110500966](/Users/hcy/Documents/CodeProject/SpringBoot/smartrobot/md/img/image-201904291102261303.png)
+![image-20190429110500966](img/image-201904291102261303.png)
 
 
 
