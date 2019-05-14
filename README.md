@@ -14,3 +14,6 @@ SmallTools for developing
 - [x] 图灵陪聊 [文档](md/RobotChat.md)
 - [x] 聊天室 [文档](md/ChatRoom.md)
 
+> 日志
+ 
+ 2019-5-14 添加登陆注册（简单实现，数据库使用静态**JSONArray** ）
